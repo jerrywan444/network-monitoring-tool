@@ -1,0 +1,40 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Traffic Controller</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Network Traffic Controller</h1>
+        
+        <div class="controls">
+            <button id="scanNetwork">Scan Network</button>
+            <input type="number" id="dataLimit" min="1" placeholder="Data Limit (MB)">
+            <button id="applyLimit">Set Limit</button>
+            <span id="status"></span>
+        </div>
+
+        <div class="device-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Device Name</th>
+                        <th>MAC Address</th>
+                        <th>IP Address</th>
+                        <th>Data Usage (MB)</th>
+                        <th>Connection</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="deviceList"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
